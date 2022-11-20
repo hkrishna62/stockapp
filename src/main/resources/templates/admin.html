@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Login::</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="../static/img/apple-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../static/img/favicon.ico">
+    <!-- Load Require CSS -->
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    <!-- Font CSS -->
+    <link href="../static/css/boxicon.min.css" rel="stylesheet" th:href="@{/css/boxicon.min.css}">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Load Tempalte CSS -->
+    <link rel="stylesheet" href="../static/css/templatemo.css" th:href="@{/css/templatemo.css}">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="..static/css/custom.css" th:href="@{/css/custom.css}">
+<!--
+    
+TemplateMo 561 Purple Buzz
+
+https://templatemo.com/tm-561-purple-buzz
+
+-->
+</head>
+
+<body>
+    <!-- Header -->
+    <nav id="main_nav" class="navbar navbar-expand-lg navbar-light bg-white shadow">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a class="navbar-brand h1" href="index.html">
+                <i class='bx bx-buildings bx-sm text-dark'></i>
+                <span class="text-dark h4">Stock</span> <span class="text-primary h4">APP</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler-success" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="navbar-toggler-success">
+                <div class="flex-fill mx-xl-5 mb-2">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center text-dark">
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="getindex">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="">Services</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="getcontact1">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar align-self-center d-flex">
+                   <!--  <a class="nav-link" href="#"><i class='bx bx-bell bx-sm bx-tada-hover text-primary'></i></a>
+                    <a class="nav-link" href="#"><i class='bx bx-cog bx-sm text-primary'></i></a> -->
+                    <a class="nav-link nav-link btn-outline-primary rounded-pill" href="getindex">Logout&nbsp;&nbsp;
+                     <i class='bx bx-user-circle bx-sm text-primary'></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Close Header -->
+
+
+    <!-- Start Banner Hero -->
+    <section class="bg-light">
+        <div class="container py-4">
+            <div class="row align-items-center justify-content-between">
+                <div class="contact-header col-lg-4">
+                    <h1 class="h2 pb-3 text-primary"></h1>
+                    <h3 class="h4 regular-400">Admin Id&nbsp;:&nbsp;<span class="" th:text="${adminid}"></h3>
+                    <p class="light-300">
+                       
+                        
+                    </p>
+                </div>
+                <div class="contact-img col-lg-5 align-items-end col-md-4">
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Banner Hero -->
+
+
+    <!-- Start Contact -->
+    
+    
+    <section class="">
+
+        <div class="row">
+        
+        
+        	<div class="col-sm-4 ">
+
+				<div class="leftmenuuser">
+					<ul class="list-unstyled ulleftmenuuser ">
+						<li class="pb-2"><a class="text-decoration-none leftmenutxt"	href="index.html"></a></li>
+						<li class="pb-2">
+						<span class="glyphicon glyphicon-chevron-right">
+						<a	class="text-decoration-none leftmenutxt py-1" href=""><span>&nbsp;&nbsp;>&nbsp;&nbsp;</span>Create User</a>
+						</span>
+						</li>
+						<li class="pb-2">
+						<span class="glyphicon glyphicon-chevron-right">
+						<a	class="text-decoration-none leftmenutxt py-1" href=""><span>&nbsp;&nbsp;>&nbsp;&nbsp;</span>Add Stock Details</a>
+						</span>
+						</li>
+						<li class="pb-2">
+						<span class="glyphicon glyphicon-chevron-right">
+						<a	class="text-decoration-none leftmenutxt py-1" href=""><span>&nbsp;&nbsp;>&nbsp;&nbsp;</span>List Stock Details</a>
+						</span>
+						</li>
+							<li class="pb-2">
+						<span class="glyphicon glyphicon-chevron-right">
+						<a	class="text-decoration-none leftmenutxt py-1" href=""><span>&nbsp;&nbsp;>&nbsp;&nbsp;</span>Season Stock Offer Details</a>
+						</span>
+						</li>
+						<li class="pb-2">
+						
+						<a class="text-decoration-none leftmenutxt py-1" href=""></a>
+					
+						</li>
+					</ul>
+
+
+				</div>
+
+			</div>
+           
+
+
+
+
+            <!-- Start Contact Form -->
+            <div class="col-sm-8 ">
+               
+            </div>
+            <!-- End Contact Form -->
+
+
+        </div>
+    </section>
+    
+    
+    
+    
+    
+    <!-- End Contact -->
+
+
+    <!-- Start Footer -->
+    <footer class="bg-secondary pt-4">
+        <div class="container">
+            <div class="row py-4">
+
+                <div class="col-lg-3 col-12 align-left">
+                    <a class="navbar-brand" href="index.html">
+                        
+                        <span class="text-light h5"></span> <span class="text-light h5 semi-bold-600"></span>
+                    </a>
+                    <p class="text-light my-lg-4 my-2">
+                       
+                    </p>
+                    <ul class="list-inline footer-icons light-300">
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank">
+                               
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="https://www.linkedin.com/">
+                                
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" >
+                                
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" >
+                               
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank">
+                             
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h3 class="h4 pb-lg-3 text-light light-300"></h2>
+                        <ul class="list-unstyled text-light light-300">
+                            <li class="pb-2">
+                               <a class="text-decoration-none text-light" href="index.html"></a>
+                            </li>
+                            <li class="pb-2">
+                               <a class="text-decoration-none text-light py-1" href="about.html"></a>
+                            </li>
+                            <li class="pb-2">
+                               <a class="text-decoration-none text-light py-1" href="work.html"></a>
+                            </li>
+                            <li class="pb-2">
+                                <a class="text-decoration-none text-light py-1" href="pricing.html"></a>
+                            </li>
+                            <li class="pb-2">
+                                <a class="text-decoration-none text-light py-1" href="contact.html"></a>
+                            </li>
+                        </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h2 class="h4 pb-lg-3 text-light light-300"></h2>
+                    <ul class="list-unstyled text-light light-300">
+                        <li class="pb-2">
+                           <a class="text-decoration-none text-light py-1" href="#"></a>
+                        </li>
+                        <li class="pb-2">
+                           <a class="text-decoration-none text-light py-1" href="#"></a>
+                        </li>
+                        <li class="pb-2">
+                           <a class="text-decoration-none text-light py-1" href="#"></a>
+                        </li>
+                        <li class="pb-2">
+                           <a class="text-decoration-none text-light py-1" href="#"> </a>
+                        </li>
+                        <li class="pb-2">
+                            </i><a class="text-decoration-none text-light py-1" href="#"> </a>
+                        </li>
+                        <li class="pb-2">
+                            </i><a class="text-decoration-none text-light py-1" href="#"></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h2 class="h4 pb-lg-3 text-light light-300"></h2>
+                    <ul class="list-unstyled text-light light-300">
+                        <li class="pb-2">
+                            <a class="text-decoration-none text-light py-1" href="tel:010-020-0340"></a>
+                        </li>
+                        <li class="pb-2">
+                           <a class="text-decoration-none text-light py-1" href="mailto:info@company.com"></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="w-100 bg-primary py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="text-lg-start text-center text-light light-300">
+                           
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="text-lg-end text-center text-light light-300">
+                            <a rel="sponsored" class="text-decoration-none text-light" href="" target="_blank"><strong></strong></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
+
+    <!-- Bootstrap -->
+    <script src="../static/js/bootstrap.bundle.min.js"></script>
+    <!-- Templatemo -->
+    <script src="../static/js/templatemo.js"></script>
+    <!-- Custom -->
+    <script src="../static/js/custom.js"></script>
+
+</body>
+
+</html>
