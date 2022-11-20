@@ -18,7 +18,7 @@ public class AdminController {
 	@PostMapping("/createuser")
 	public String createUser(@ModelAttribute("user") User user, Model model) {
 		
-		
+		System.out.println("");
 		return "admin";
 		
 	}
