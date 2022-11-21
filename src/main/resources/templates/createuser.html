@@ -38,7 +38,8 @@ https://templatemo.com/tm-561-purple-buzz
 
             <div class="" >
                 <div class="flex-fill mx-xl-5 mb-2">
-                   <ul>
+                 
+                  <ul>
                        
                           <li>  <a class="nav-link btn-outline-primary rounded-pill px-3" href="getindex">Home</a></li>
                         
@@ -74,7 +75,7 @@ https://templatemo.com/tm-561-purple-buzz
             <div class="row align-items-center justify-content-between">
                 <div class="contact-header col-lg-4">
                     <h1 class="h2 pb-3 text-primary"></h1>
-                    <h3 class="h4 regular-400">Admin Id&nbsp;:&nbsp;<span class="" th:text="${adminid}"></span></h3>
+                    <h3 class="h4 regular-400">Admin Id&nbsp;:&nbsp;<span class="" th:text="${adminid}"></h3>
                     <p class="light-300">
                        
                         
@@ -100,41 +101,35 @@ https://templatemo.com/tm-561-purple-buzz
         	<div class="col-sm-4 ">
 
 				<div class="leftmenuuser">
-				<div class="ulleftmenuuser ">
-					<table>
-						<tr >
-						<td><a class="leftmenutxt"	href="index.html"></a></td>
-						<tr>
-						<tr>
-						<td><a	class="leftmenutxt" th:href="@{/createuser/{userid}(userid = ${adminid})}"   >
-						<span>&nbsp;&nbsp;>&nbsp;&nbsp;</span>Create User</a>
-						</td>
-						</tr>
-						<tr>
-						<td>
-
+					<ul class="ulleftmenuuser ">
+						<li ><a class="text-decoration-none leftmenutxt"	href="index.html"></a></li>
+						<li >
+						<span class="">
+						<a	class="text-decoration-none leftmenutxt py-1" href=""><span>&nbsp;&nbsp;>&nbsp;&nbsp;</span>Create User</a>
+						</span>
+						</li>
+						<li >
+						<span class="">
 						<a	class="text-decoration-none leftmenutxt py-1" href=""><span>&nbsp;&nbsp;>&nbsp;&nbsp;</span>Add Stock Details</a>
+						</span>
+						</li>
+						<li >
+						<span class="">
+						<a	class="text-decoration-none leftmenutxt " href=""><span>&nbsp;&nbsp;>&nbsp;&nbsp;</span>List Stock Details</a>
+						</span>
+						</li>
+							<li>
+						<span class="">
+						<a	class="text-decoration-none leftmenutxt " href=""><span>&nbsp;&nbsp;>&nbsp;&nbsp;</span>Season Stock Offer Details</a>
+						</span>
+						</li>
+						<li>
 						
-						</td>
-						</tr>
-						<tr>
-						<td>
-						<a	class="text-decoration-none leftmenutxt py-1" href=""><span>&nbsp;&nbsp;>&nbsp;&nbsp;</span>List Stock Details</a>
-						
-						</td>
-						</tr>
-							<tr>
-						
-						<td><a	class="text-decoration-none leftmenutxt py-1" href=""><span>&nbsp;&nbsp;>&nbsp;&nbsp;</span>Season Stock Offer Details</a>
-						</td>
-						</tr>
-						<tr>
-                         <td>		
-						<a class="text-decoration-none leftmenutxt py-1" href=""></a></td>
+						<a class=" leftmenutxt " href=""></a>
 					
-						</tr>
-					</table>
-               </div>
+						</li>
+					</ul>
+
 
 				</div>
 
