@@ -26,5 +26,17 @@ public class UserServiceImpl implements UserService{
 		return userRepository.loginCheck(userId, password);
 	}
 
+	@Override
+	public List<User> findUser(Integer userId) {
+		
+		return userRepository.findUser(userId);
+	}
+
+	@Override
+	public User createUser(User user) {
+		
+		return userRepository.save(user);
+	}
+
 	
 }

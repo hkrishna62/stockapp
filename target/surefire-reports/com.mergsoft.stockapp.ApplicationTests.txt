@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.mergsoft.stockapp.ApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 23.703 s - in com.mergsoft.stockapp.ApplicationTests

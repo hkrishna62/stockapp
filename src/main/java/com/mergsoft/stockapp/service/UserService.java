@@ -11,4 +11,8 @@ public interface UserService {
 
 	List<User> loginCheck(Integer userId, String password);
 
+	List<User> findUser(Integer userId);
+
+	User createUser(User user);
+
 }
