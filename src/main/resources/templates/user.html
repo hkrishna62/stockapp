@@ -2,7 +2,7 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 
 <head>
-    <title>Login::</title>
+    <title>Stock::</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="../static/img/apple-icon.png">
@@ -112,6 +112,13 @@
 						<tr>
 						<td><a class=" leftmenutxt"	href="index.html"></a></td>
 						</tr>
+						
+							<tr>
+						<td><a	class="leftmenutxt"  th:href="@{/userliststock/{userid}(userid=${userid})}" ><span>&nbsp;&nbsp;>&nbsp;&nbsp;</span>List Stock</a></td>
+						
+				
+						<tr>
+						
 						<tr>
 						<td><a	class="leftmenutxt" href=""><span>&nbsp;&nbsp;>&nbsp;&nbsp;</span>Search Stock</a></td>
 						

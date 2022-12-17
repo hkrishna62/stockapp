@@ -169,13 +169,13 @@ https://templatemo.com/tm-561-purple-buzz
             <!-- Start Contact Form -->
             <div class="col-sm-8 ">
 				<div>
-					<form th:action="@{/createuser}" method="post" th:object="${user}" class="contact-form row" role="form">
+					<form th:action="@{/createstock}" method="post" th:object="${stock}" class="contact-form row" role="form">
 					<div>
 						<p>
 							<br>
 							<br>
 							<span class="errmsg" th:text="${errmsg1}"></span>&nbsp;&nbsp;
-							<span class="errmsg" th:text="${userid1}"></span>&nbsp;&nbsp;
+							<span class="errmsg" th:text="${stockid1}"></span>&nbsp;&nbsp;
 							<br>
 							<br>
 						</p>
@@ -186,8 +186,8 @@ https://templatemo.com/tm-561-purple-buzz
 						<div class="col-lg-6 mb-4">
 						<div class="form-floating">
 							<input type="text" class="form-control form-control-lg light-300"
-								th:field="*{userId}" name="inputuserid" placeholder="UserId">
-							<label for="floatingname light-300">UserId</label>
+								th:field="*{stockId}" name="inputstockid" placeholder="StockId">
+							<label for="floatingname light-300">StockId</label>
 						</div>
 					</div>
 						</td></tr>
@@ -197,8 +197,8 @@ https://templatemo.com/tm-561-purple-buzz
 						<div class="col-lg-6 mb-4">
 						<div class="form-floating">
 							<input type="text" class="form-control form-control-lg light-300"
-								th:field="*{userName}" name="inputusername" placeholder="UserName">
-							<label for="floatingname light-300">UserName</label>
+								th:field="*{companyName}" name="inputcompanyName" placeholder="CompanyName">
+							<label for="floatingname light-300">CompanyName</label>
 						</div>
 					</div>
 						
@@ -208,8 +208,8 @@ https://templatemo.com/tm-561-purple-buzz
 						<div class="col-lg-6 mb-4">
 						<div class="form-floating">
 							<input type="text" class="form-control form-control-lg light-300"
-								th:field="*{email}" name="inputuseremail" placeholder="UserEmail">
-							<label for="floatingname light-300">Email</label>
+								th:field="*{stockSymbol}" name="inputstockSymboll" placeholder="StockSymbol">
+							<label for="floatingname light-300">StockSymbol</label>
 						</div>
 					</div>
 						
@@ -218,9 +218,9 @@ https://templatemo.com/tm-561-purple-buzz
 						<tr><td>
 						<div class="col-lg-6 mb-4">
 						<div class="form-floating">
-							<input type="password" class="form-control form-control-lg light-300"
-								th:field="*{password}" name="password" placeholder="password">
-							<label for="floatingname light-300">Password</label>
+							<input type="text" class="form-control form-control-lg light-300"
+								th:field="*{unitPrice}" name="unitPrice" placeholder="UnitPrice">
+							<label for="floatingname light-300">UnitPrice</label>
 						</div>
 					</div>
 				
@@ -231,8 +231,8 @@ https://templatemo.com/tm-561-purple-buzz
 						<div class="col-lg-6 mb-4">
 						<div class="form-floating">
 							<input type="text" class="form-control form-control-lg light-300"
-								th:field="*{phoneNo}" name="inputphoneNo" placeholder="UserphoneNo">
-							<label for="floatingname light-300">PhoneNo</label>
+								th:field="*{unitsAvailable}" name="unitsAvailable" placeholder="UnitsAvailable">
+							<label for="floatingname light-300">UnitsAvailable</label>
 						</div>
 					</div>
 				
@@ -242,8 +242,8 @@ https://templatemo.com/tm-561-purple-buzz
 						<div class="col-lg-6 mb-4">
 						<div class="form-floating">
 							<input type="text" class="form-control form-control-lg light-300"
-								th:field="*{accUserType}" name="accUserType" placeholder="UserAccountType">
-							<label for="floatingname light-300">UserAccountType</label>
+								th:field="*{unitSold}" name="unitSold" placeholder="UnitSold">
+							<label for="floatingname light-300">UnitSold</label>
 						</div>
 					</div>
 				
@@ -253,45 +253,17 @@ https://templatemo.com/tm-561-purple-buzz
 						<div class="col-lg-6 mb-4">
 						<div class="form-floating">
 							<input type="text" class="form-control form-control-lg light-300"
-								th:field="*{accountStatus}" name="accountStatus" placeholder="AccountStatus">
-							<label for="floatingname light-300">UserAccountStatus</label>
+								th:field="*{totalUnits}" name="totalUnits" placeholder="totalUnits">
+							<label for="floatingname light-300">TotalUnits</label>
 						</div>
 					</div>
 				
 						</td></tr>
 						
-						<tr><td>
-						<div class="col-lg-6 mb-4">
-						<div class="form-floating">
-							<input type="text" class="form-control form-control-lg light-300"
-								th:field="*{panCardNo}" name="panCardNo" placeholder="PanCardNo">
-							<label for="floatingname light-300">UserPanCardNo</label>
-						</div>
-					</div>
-				
-						</td></tr>
 						
-						<tr><td>
-						<div class="col-lg-6 mb-4">
-						<div class="form-floating">
-							<input type="text" class="form-control form-control-lg light-300"
-								th:field="*{bankAccNo}" name="bankAccNo" placeholder="BankAccountNo">
-							<label for="floatingname light-300">BankAccountNo</label>
-						</div>
-					</div>
-				
-						</td></tr>
 						
-						<tr><td>
-						<div class="col-lg-6 mb-4">
-						<div class="form-floating">
-							<input type="text" class="form-control form-control-lg light-300"
-								th:field="*{bankAccIFSC}" name="bankAccIFSC" placeholder="BankIFSC">
-							<label for="floatingname light-300">BankIFSC</label>
-						</div>
-					</div>
-				
-						</td></tr>
+						
+						
 						
 			
 						
@@ -299,8 +271,8 @@ https://templatemo.com/tm-561-purple-buzz
 						
 						<tr><td>
 						<div class="col-md-4 col-4 m-auto text-end">
-						<button type="submit" name="createuser"
-							class="btn btn-secondary rounded-pill px-md-5 px-4 py-2 radius-0 text-light light-300">Createuser</button>
+						<button type="submit" name="createstock"
+							class="btn btn-secondary rounded-pill px-md-5 px-4 py-2 radius-0 text-light light-300">CreateStock</button>
 					</div>
 						
 						</td></tr>

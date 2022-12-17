@@ -114,9 +114,9 @@
 						</tr>
 						
 							<tr>
-						<td><a	class="leftmenutxt"  th:href="@{/userliststock/{userid}(userid=${userid})}" ><span>&nbsp;&nbsp;>&nbsp;&nbsp;</span>List Stock</a></td>
+						<td><a	class="leftmenutxt" href="@{/userliststock/{userid}(userid = ${userid})}"><span>&nbsp;&nbsp;>&nbsp;&nbsp;</span>List Stock</a></td>
 						
-				
+						
 						<tr>
 						
 						<tr>
@@ -150,6 +150,58 @@
 
             <!-- Start Contact Form -->
             <div class="col-sm-8 ">
+            
+            <div>
+            <div class="container">
+		<h3>Stock  DATA PAGE </h3>
+		<table class="table table-hover">
+			<tr class="bg-info text-white">
+				<th>Stock ID</th>
+				<th>Company Name</th>
+				<th>Stock Symbol</th>
+				<th>Unit Price</th>
+				<th>Units Available</th>
+				
+			</tr>
+			<tr th:each="ob:${list}">
+				<td>[[${ob.stockId}]]</td>
+				<td>[[${ob.companyName}]]</td>
+				<td>[[${ob.stockSymbol}]]</td>
+				<td>[[${ob.unitPrice}]]</td>
+				<td>[[${ob.unitsAvailable}]]</td>
+				
+				<td>
+<!-- <a th:href="@{/employee/delete(id=${ob.empId})}" class="btn btn-danger">DELETE</a> |  -->
+					<a th:href="@{/buystock/{userid}(userid = ${userid})/(stockid=${ob.stockId})}" class="btn btn-warning">BUY</a>
+				</td>
+			</tr>
+		</table>
+		<hr/>
+		<nav aria-label="Page navigation example">
+  			<ul class="pagination justify-content-center">
+  				<li class="page-item" th:if="${!pob.isFirst()}">
+    				<a class="page-link" th:href="@{/userliststock/(page=0)}">First</a>
+    			</li>
+    			<li class="page-item" th:if="${pob.hasPrevious()}">
+    				<a class="page-link" th:href="@{/userliststock/(page=${pob.getNumber()-1})}">Previous</a>
+    			</li>
+    			<th:block th:each="i:${#numbers.sequence(0,pob.getTotalPages()-1)}">
+    				<li class="page-item">
+    					<a class="page-link" th:href="@{/userliststock/(page=${i})}">[[${i+1}]]</a>
+	    			</li>
+    			</th:block>
+    			<li class="page-item" th:if="${pob.hasNext()}">
+    				<a class="page-link" th:href="@{/userliststock/(page=${pob.getNumber()+1})}">Next</a>
+    			</li>
+    			<li class="page-item" th:if="${!pob.isLast()}">
+    				<a class="page-link" th:href="@{/userliststock/(page=${pob.getTotalPages()-1})}">Last</a>
+    			</li>
+  			</ul>
+		</nav>
+	  </div>
+            
+            
+            </div>
                
             </div>
             <!-- End Contact Form -->

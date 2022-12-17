@@ -2,7 +2,7 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 
 <head>
-    <title>Login::</title>
+    <title>Admin::</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="../static/img/apple-icon.png">
@@ -113,7 +113,8 @@ https://templatemo.com/tm-561-purple-buzz
 						<tr>
 						<td>
 
-						<a	class="text-decoration-none leftmenutxt py-1" href=""><span>&nbsp;&nbsp;>&nbsp;&nbsp;</span>Add Stock Details</a>
+						<a	class="text-decoration-none leftmenutxt py-1 leftmenutxt" th:href="@{/addstock}">
+						<span>&nbsp;&nbsp;>&nbsp;&nbsp;</span>Add Stock Details</a>
 						
 						</td>
 						</tr>
